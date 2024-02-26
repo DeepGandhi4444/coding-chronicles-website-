@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ads starts -->
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8772552619028356"
+    crossorigin="anonymous"></script>
+    <!-- ads ends  -->
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75B1WTJ9DD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-75B1WTJ9DD');
+</script>
+<!-- ends -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JS NOTES</title>
+
+    <meta name="copyright" content="MACode ID, https://macodeid.com/">
+
+    <meta name="description" content="Finding right place for learning JavaScript so, got to try this platform!!">
+
+    <link rel="stylesheet" href="../../assets/css/maicons.css">
+
+    <link rel="shortcut icon" href="../../assets/img/logo1(temp).png"
+      type="image/x-icon">
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../../assets/vendor/animate/animate.css">
+
+    <link rel="stylesheet" href="../../assets/css/theme.css">
+
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../notes.css">
+
+    <style>
+    #myScrollspy{
+      border-right:1px solid;
+       width: fit-content;
+       position:-webkit-sticky;
+       position:sticky;
+       top: 71px;
+       left: 0;
+       height: 100vh;
+    }
+  </style>
+  </head>
+
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <!-- Back to top button -->
+    <div class="back-to-top"></div>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white sticky padding1"  style="border-bottom: 1px solid;" data-offset="300">
+        <div class="container-fluid">
+          <a href="index.html" class="navbar-brand"><img
+              src="../../assets/img/logo1.png" class="logos1"></img></a>
+  
+        <button class="navbar-toggler" data-toggle="collapse"
+          data-target="#navbarContent" aria-controls="navbarContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="navbar-collapse collapsed" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+                data-toggle="dropdown">
+                Courses
+              </a>
+              <div class="dropdown-menu">
+                <div class="dropdown dropright">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    HTML CSS & JS
+                  </button>
+                 
+                  <div class="dropdown-menu dropdown-item " style="border:1px solid black;border-radius: 5px;background-color: #fff;">
+                    <!-- Dropdown menu links -->
+                       <a class="dropdown-item secdropright " href="../../html _css_js.html" target="_blank">EDITOR</a>
+                      <a class="dropdown-item secdropright"  href="../html/html.html" target="_blank">HTML NOTES</a>
+                      <a class="dropdown-item secdropright" href="../css-notes/css.html" target="_blank">CSS NOTES</a>
+                      <a class="dropdown-item secdropright" href="../js/js.html" target="_blank">JS NOTES</a>
+                  </div>
+                </div>
+                
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../privacy.html">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../about.html">About</a>
+            </li>
+           
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Get Started
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="">HTML CSS & JS</a>
+                <a class="dropdown-item" href="">C</a>
+              </div>
+            </li> -->
+          </div>
+  
+        </div>
+      </nav>
+    </header>
+
+  <!-- <div class="htmlpadding">
+  </div> -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-sm-3 col-4" id="myScrollspy">
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Variable & Data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Expressions & Conditionals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">Loops & functions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">String</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section5">Arrays</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section6">JavaScript in the browser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section7">Walking The DOM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section8">Events & other DOM properties</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section9">Call backs, promises &
+              async/await</a>
+          </li>
+          <!-- <li class="nav-item">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">Link 1</a>
+            <a class="dropdown-item" href="#section42">Link 2</a>
+          </div>
+        </li> -->
+        </ul>
+      </nav>
+      <div class="col-sm-9 col-8">
+        <h1 id="introduction-to-javascript">Introduction to JavaScript</h1>
+        <div id="section1">
+          <h2 id="chapter1-variable-data">Chapter:1 Variable &amp; Data</h2>
+          <p>Just like we follow some rules while speaking english (the
+            grammer),
+            we have some rules to folow while writing a javascript program. The
+            sets
+            of these rules is called syntax in javascript.
+            <h3> What is Variable ?</h3>
+            A variable is a container that stores a value. This is very similar to the
+            container used to store rice, water and oats (Treat this as an
+            analogy!)</p>
+          <p>The value of a javascript variable can be changed during the
+            execution of a program.</p>
+          <pre><code>var a=7;
+let a=7;</code></pre>
+          <h3 id="rules-for-choosing-variable-names">rules for choosing variable
+            names</h3>
+          <ul>
+            <li>Letters, digits, underscores &amp; $ sign allowed.</li>
+            <li>Must begin with a $,_ or a letter.</li>
+            <li>Javascript reserved word cannot be used as a variable name.</li>
+            <li>Harry harruy are different variable(case sensitive).</li>
+          </ul>
+          <h3 id="var-vs-let-in-javascript">Var vs let in JavaScript</h3>
+          <ul>
+            <li>Var is globally scoped while let &amp; const are block scoped.</li>
+            <li>Var can be update &amp; re-declared within its scope.</li>
+            <li>Let can be update but not re-declared.</li>
+            <li>Const can neither be updated nor be re-declared.</li>
+            <li>Var Variable are initialized with underlined whereas let and
+              const
+              variable are not initialized .</li>
+            <li>const must be initialized during declaration unlike let and
+              var.</li>
+          </ul>
+          <h3 id="primitive-data-types-objects">Primitive Data Types &amp;
+            Objects</h3>
+          <p>Primitive data types are a set of basic data types in javascript.
+            Objects is a non primitive datatypes in javascript.</p>
+          <p>These are the 7 primitive datatypes in javascript. - Null - Number
+            -
+            String - Symbol - Undefined - Boolen - Biglnt</p>
+          <h3 id="object">Object</h3>
+          <p>An object in JavaScript can be created as follows</p>
+          <pre><code>const item = {
+name:&quot;Led Bulb&quot;,
+price:&quot;150/-&quot;
+}</code></pre>
+        </div>
+        <div id="section2">
+          <h2 id="chapter2-expressions-conditionals">Chapter:2 Expressions &amp;
+            Conditionals</h2>
+          <p>A fragment of code that produces a value is called an expression.
+            Every value written literally called an expression. Every value
+            written
+            literally is an expression. For ex: 77 or “Javascript”</p>
+          <h3 id="operators-in-javascript">Operators in JavaScript</h3>
+          <h4 id="arithmetic-operator">1.Arithmetic Operator</h4>
+          <ul>
+            <li>+:Addition,</li>
+            <li>-:Subtraction,</li>
+            <li>*:Multiplication,</li>
+            <li>**:Exponentiation,</li>
+            <li>/:Divison,</li>
+            <li>%:Modulus</li>
+            <li>++:Increment</li>
+            <li>–:Decrement</li>
+          </ul>
+          <h3 id="assignment-operator">2.Assignment Operator</h3>
+          <ul>
+            <li>= : x=y</li>
+            <li>+= : x=x+y</li>
+            <li>-= : x=x-y</li>
+            <li><em>= : x=x</em>y</li>
+            <li>/= : x=x/y</li>
+            <li>%= : x=x%y</li>
+            <li><strong>= : x=x</strong>y</li>
+          </ul>
+          <h3 id="comparison-operator">3.Comparison Operator</h3>
+          <ul>
+            <li>== : equal to</li>
+            <li>!= : not equal</li>
+            <li>=== : equal value and type</li>
+            <li>!== : not equal value or not equal type</li>
+            <li><blockquote>
+                <p>: greater than</p>
+              </blockquote></li>
+            <li>&lt; : less than</li>
+            <li><blockquote>
+                <p>= : greater than or equal to</p>
+              </blockquote></li>
+            <li>&lt;= : less than or equal to</li>
+            <li>? : trnary operator</li>
+          </ul>
+          <h3 id="logical-operator">4. Logical Operator</h3>
+          <ul>
+            <li>&amp;&amp; : logical and</li>
+            <li>|| : logical or</li>
+            <li>! : logical not Apart From these, we also have type and bitwise
+              operators. Bitwise operator performs bit by bit operations on
+              numbers.</li>
+          </ul>
+          <h2 id="comments-in-javascript">Comments in JavaScript</h2>
+          <p>Sometimes we want our program to contain a text which is not
+            executed
+            by the JS Engine. Such a text is called comment in JavaScript. A
+            comment
+            in Javascript can be written as follows:</p>
+          <p>let a=2; // this is a single line Comment</p>
+          <p><em>/* I am a multiple line comment */</em></p>
+          <p>Sometimes comments are used to prevent the execution of some lines
+            of
+            code.</p>
+          <p>let switch = true; // Switch = false →Commented line won't
+            execute</p>
+          <h3 id="conditional-statements">Conditional Statements</h3>
+          <p>Sometimes we might have to execute a block of code based off some
+            condition. For example “a prompt might ask for the age of the user
+            and
+            it its greater then 18. display a special message.</p>
+          <p>In JavaScript we have three forms of if eles Statement. 
+            <ol>
+              <li> if statement </li>
+              <li> if… else statement</li>
+              <li>if … else if … else statement</li>
+            </ol>
+             </p>
+          <h3 id="if-statement">If statement</h3>
+          <p>The if statement in JavaScript looks like this:</p>
+          <pre><code>if(condition){ 
+// execute this code
+}</code></pre>
+          <p>The if statement evaluates the condition inside the () If the
+            condition is evaluated to true, the code inside the body of if is
+            executed else the code is not executed.</p>
+          <h3 id="if--else-statement">if- else statement</h3>
+          <p>The if statement can have an optional else clause. The syntax looks
+            something like this</p>
+          <pre><code>if (condition) { 
+// block of code if condition true 
+} 
+else { 11 block if if Condition false 
+}</code></pre>
+          <p>If the condition is true, code inside if is executed else code
+            inside
+            else block is executed</p>
+          <h3 id="if-else-if-statement">if else if statement</h3>
+          <p>Sometimes we might want to keep rechecking a set of conditions one
+            by
+            one until matches. We use if else if for achieving this.</p>
+          <p>Syntax of if…else if looks like this</p>
+          <pre><code>if (age 70) {
+    Console.log(&quot; A valid age&quot;);
+    }
+else if (age &gt; 10 &amp;&amp; age &gt; 15 age) {
+     Console.log(&quot; but you are a kid &quot;);
+    }
+else if (age &gt;18) {
+    Console.log(&quot; not a kid&quot;);
+    }
+
+else {
+    Console.log(&quot;Invalid Age&quot;)
+    }</code></pre>
+          <h3 id="javascript-ternary-operator">JavaScript ternary Operator</h3>
+          <p>Exaluates a condition and executes a block of Code based on the
+            condition</p>
+          <p>Condition ? exp1: exp2</p>
+          <p>Example syntax of ternary operator looks like this:</p>
+          <pre><code>(marks &gt; 10) ? &#39;Yes&#39;: &#39;No&#39;
+→ if marks are than 10, you are greater passed else not</code></pre>
+        </div>
+        <div id="section3">
+          <h2 id="chapter3---loops-functions.">Chapter:3 - Loops &amp;
+            functions.</h2>
+          <p>We use loops to perform repeated actions. For example - If you are
+            assigned a task of printing numbers from 1 to 100, it will be very
+            hectic to do it manually, Loops help help us automate such tasks.</p>
+          <h3 id="types-of-loops-in-javascript.">Types of loops in
+            JavaScript.</h3>
+          <ul>
+            <li>for loop → loop a block of lode no of times.</li>
+            <li>for in loop → loops through the Reys of an object.</li>
+            <li>for of loop → loops through the values of an object.</li>
+            <li>while bop → loops a block based on a specific conditions.</li>
+            <li>do while loop → while loop variant which runs atleast once.</li>
+          </ul>
+          <h3 id="the-for-loop">The for loop</h3>
+          <p>The syntax of a for loop looks something like this</p>
+          <pre><code>for ( statement; statement 2; Statement 3) {
+// code to be executed 
+}</code></pre>
+          <ul>
+            <li>statement 1 is executed gre time</li>
+            <li>tatement 2 is the condition base on which the loop runs (loop
+              body
+              is executed)</li>
+            <li>statement 3 is executed every tiove the loop body is executed</li>
+          </ul>
+          <h3 id="the-for-in-loop">The for in loop</h3>
+          <p>The syntax of for-in loop looks like this</p>
+          <pre><code>for (key in object) { 
+// code to be executed.
+}</code></pre>
+          <h4 id="quick-quiz">Quick Quiz:</h4>
+          <ul>
+            <li>Write a sample program demonstrating for-in loop</li>
+          </ul>
+          <h3 id="the-for---of-loop">The for - of loop</h3>
+          <p>The syntax of for- of bop looks like this for every iteration</p>
+          <pre><code>for (Variable of iterable) {
+//code
+}</code></pre>
+          <h4 id="quick-quiz-1">Quick Quiz:</h4>
+          <ul>
+            <li>Write a sample program demonstrating for- of loops</li>
+          </ul>
+          <h3 id="the-while-loop">The while loop</h3>
+          <p>The syntax of while loop looks like this:</p>
+          <pre><code>while (condition){
+    // code to be executed
+}</code></pre>
+          <h4 id="quick-quiq">Quick Quiq:</h4>
+          <ul>
+            <li>Write a sample program demonstratimg do while loop</li>
+          </ul>
+          <h3 id="function-in-javascript">Function in JavaScript</h3>
+          <p>A JavaScript function is a block of code designed to perform a
+            particular task.</p>
+          <p>syntax of a function looks something like this:</p>
+          <pre><code>function myfunc(){
+// code
+}</code></pre>
+          <pre><code>function binodfunc(parameter1, parameter2){
+      // code   
+}</code></pre>
+          <p>binod func(7,8) → Function invocation</p>
+          <p>Function invocation is a way to use the code inside the function A
+            function can also return a value. The value is “returned” back to
+            the
+            caller</p>
+          <pre><code>Const sum =(a,b)→{
+         let c = a+b;
+         return c;
+}
+
+let y=sum(1,3)
+console.log(y)v    → Prints 4</code></pre>
+        </div>
+        <div id="section4">
+          <h2 id="chapter4---string">Chapter:4 - String</h2>
+          <p>Strings are used to store and manupilate text. String can be
+            created
+            using the following syntax.</p>
+          <pre><code>let name = &quot; Jay &quot;→ create a string
+name.lemgth → This property prints length of the string</code></pre>
+          <p>Strings can also be created using single quotes</p>
+          <p>let name = ‘Jay’</p>
+          <h3 id="template-literals">Template Literals</h3>
+          <p>Template literals use backtics instead of quotes to define a
+            string.</p>
+          <p>let name = ‘Jay’</p>
+          <p>With template literals, it is posible to use both single as well as
+            double quotes inside a string</p>
+          <p>let sentence = ‘The name “is” Jay’</p>
+          <p>We can insert variable directly in template literals. This is
+            called
+            string interpolation.</p>
+          <p>let a = ‘This is ${nmae}’→ Prints ‘This is a Jay’</p>
+          <p><h3>Escape Sequence Characters</h3>
+             If you try to print the folowing
+            string, JavaScrpt will misunderstand it</p>
+          <p>let name = “Adam D’Angel:”</p>
+          <p>Similarly we can use " inside a string with double qutes</p>
+          <p>Other escape sequence characters are as follows - → newlines - tab
+            -
+            carriage return</p>
+          <pre><code>1.  let name = &quot;Harry&quot;
+       name.length  → prints 5
+
+2.  let name = &quot;Harry&quot;
+        name.toupperCase() → prints HARRY
+
+3.  let name = &quot;Harry&quot;
+        name.tolowerCase()  → prints harry
+4.  let name = &quot;Harry&quot;
+        name.slice(2,4) → print rr 
+
+5.  let name = &quot;Harry&quot;
+        name.slice(2) → print rry
+
+6.  let name = &quot;Harry Bhai&quot;
+    let newName = name.replace(&quot;Bhai&quot;,&quot;Bhau&quot;)
+
+7.  let name1 = &quot;Harry&quot;
+    let name2 = &quot;Naman&quot;
+    let name3 = name1.concat(name2,&quot;Yes&quot;)
+
+8.  let name = &quot;Harry&quot;
+    let newName = name.triml()</code></pre>
+          <p>strings are immutable. Inorder to acces thr chatacter at an index
+            we
+            use the folowing syntax</p>
+          <pre><code>let name = &quot;Harry&quot;
+    name[0] → Prints H
+    name[1] → Prints a</code></pre>
+        </div>
+        <div id="section5">
+          <h2 id="chapter-5---arrays">Chapter : 5 - Arrays</h2>
+          <p>Arrays are variable which can hold more than one value.</p>
+          <pre><code>Const fruits = [&quot;banana&quot;,&quot;apple&quot;,&quot;graps&quot;]
+Const a1 = [7,&quot;Harry&quot;,false] → can be different types</code></pre>
+          <h3 id="accessing-values">Accessing Values</h3>
+          <p>let numbers = [1,2,7,9]</p>
+          <pre><code>num[0]→1
+num[1]→2</code></pre>
+          <h3 id="finding-the-length">Finding the length</h3>
+          <pre><code>let number = [1,7,9,21]
+number[0]→1
+number.length→4</code></pre>
+          <h3 id="changing-the-values">Changing the Values</h3>
+          <pre><code>let number = [7,2,40,9]
+number[2] = 8 → &quot;numbers&quot; now become [7,2,8,9]
+                //Arrays are mutable
+                //Arrays can be changed</code></pre>
+          <p>In JavaScript, arrays are objects. The types of operator on arrays
+            returns object</p>
+          <pre><code>const n =[1,7,9]
+
+// type of n → return &quot;objects&quot;</code></pre>
+          <p>Arrays can hold many values under a single name</p>
+          <h3 id="array-methods">Array methods</h3>
+          <p>There are some important arrays methods in JavaScript some of them
+            are as follow:</p>
+          <ol>
+            <li> toString() → Converts an arrays to a string of comma separated value
+              <pre><code>
+let n = [1,7,9];
+n.toString()→1,7,9
+              </code></pre>
+              </li>
+            <li>
+           join() → joins all the arrays elements using a separator
+              <pre><code>
+let n = [7,9,13];
+n.join(&quot;_&quot;) → 7-9-13
+              </code></pre>
+     
+          </li>
+            <li>
+pop() → remove last element from the arrays
+<pre><code>
+ let n = [1,2,4];
+n.pop() // →update the original arrays return the popped value
+</code></pre>
+       
+
+            </li>
+            <li>
+push() → adds a new elements at the end of the arrays
+<pre><code>
+let a = [7,1,2,8]
+ a.push(9) //→ modifies the original arrays
+ //→ returns the new arrays length
+</code></pre>
+
+
+            </li>
+            <li>
+shift() → Remove first element and returns it
+            </li>
+            <li>
+unshift() → Adds element to the beginning. Return new array length.
+            </li>
+            <li>
+delete → arrays elements can be deleted using the delete operator 
+<pre><code>
+let d = [7,8,9,10]
+delete d[1] //→ delete is an operator
+</code></pre>  
+
+            </li>
+            <li>
+concat → used to join arrays to the given array
+<pre><code>
+let a1 = [1,2,3];
+let a2 = [4,5,6];
+let a3 = [7,8,9];  
+a1.concat(a2,a3) → Return [1,2,3,4,5,6,7,8,9];
+</code></pre>
+            </li>
+            <li>
+sort() → sort() method is used to sort an array aiphabetically
+<pre><code>
+let a = [7,9,8];
+a.sort();
+</code></pre>
+            </li>
+            <li>
+ splice() → splice can be used to add new items to an array
+<pre><code>
+const numbers = [1,2,3,4,5];
+number.splice(2,1,23,24);
+</code></pre>
+            </li>
+            <li>
+slice() → slices out a piece from an arrays. It creates a new array.
+<pre><code>
+const num = [1,2,3,4];
+num.slice(2);
+num.sclice(1,3);
+</code></pre>
+            
+            </li>
+            <li>
+reverse() → Reverse the elements in the source array.
+            </li>
+          </ol>
+          <h3 id="looping-through-arrays">Looping through Arrays</h3>
+          <p>Arrays can b looped through using the classical Javascript for loop
+            or through some other methods discussed below</p>
+          <pre><code>
+
+            1. forEach loop → calls a function, once for each array element
+
+            Const a = [1,2,3]
+            a.forEach( (value,index,array) → {
+                        // function logic
+            });
+
+2. map() → Creates a new array by performing some operation on each array element. 
+
+             Const a = [1,2,3]
+             a.map ((value,index,array) → {
+                      return value*value;
+             })
+
+3. filter() → Filters an array with value that passesa test. Create a new array
+
+            Const a = [1,2,3,4,5]
+                  a.filter(greater_than_5)
+
+4. reduce method → Reduces an array to a single value
+
+             Const n = [1,8,7,11]
+             let sum = numbers.reduce(add)
+
+5. Array from → used to create an array from any other object
+
+                  Array.from(&quot;Harry&quot;)
+
+6. for...of → For of loop can be used to get the values from an array.
+
+7. for...in → for in loopcan be used to get the keys from an array.</code></pre>
+        </div>
+        <div id="section6">
+          <h2 id="chapter-6---javascript-in-the-browser">Chapter : 6 -
+            JavaScript
+            in the browser</h2>
+          <p>JavaScript was initiaaly created to make web pages alive. JS can be
+            written right in a web page’s HTML to make it interactive.</p>
+          <p>The browser has an embedded engine called the JavaScript engine or
+            the JavaScript runtime.</p>
+          <p>JavaScript’s added in the browser is very limited to protect the
+            user’s safety. For example a webpage on http://google.com cannot
+            access
+            http://codewear.com and steal information from there.</p>
+          <h3 id="developer-tools">Developer Tools</h3>
+          <p>Every browser has some developer tools which makes a developer’s
+            life
+            a lot easier. F12 on chrome opens Dev tools
+            <br>
+            <img id="dev" src="devtools.png" /></p>
+          <p>We can also write JavaScript commands in the Console.</p>
+          <h3 id="the-script-tag">The Script tag</h3>
+          <p>The script tag is used to insert JavaScript into an HTML page.</p>
+          <p>The script tag can be used to insert external or internal
+            scripts.</p>
+          <pre><code>&lt;script&gt;
+alert(&quot;Hello&quot;)
+&lt;/script&gt;
+// or...
+&lt;script src=&quot;/Js/thisore.js&quot;&gt;&lt;/script&gt;</code></pre>
+          <p>The benefits of a separate javascript file is that the browser will
+            download it and store it in it’s cache.</p>
+          <h3 id="console-object-methods">Console object methods</h3>
+          <p>The console objects has several methods, log being one of then.
+            Some
+            of them are as follows:</p>
+          <ul>
+            <li>assert() → used to assert a condition</li>
+            <li>clear() → clears the console</li>
+            <li>log() → outputs a message to the console</li>
+            <li>table() → display a tabular data</li>
+            <li>warm() → used for warning</li>
+            <li>error() → used for errors</li>
+            <li>info() → used for special information</li>
+          </ul>
+          <p>You will naturally remember some or all of these with time.
+            Comprehensive list can be looked up on MDN</p>
+          <h3 id="interaction-alert-promt-and-confirm">Interaction : alert,
+            promt
+            and confirm</h3>
+          <ul>
+            <li><p>Alert : used to invoke a mini window with a msg.</p>
+              <pre><code> alert(&quot;hello&quot;)</code></pre></li>
+            <li><p>Promt : used to take use input as string</p>
+              <pre><code>  inp = prompt(&quot;Hi&quot;,&quot;No&quot;)</code></pre></li>
+            <li><p>Confirm : shows a message and waits for the user to press ok
+                or
+                cance. Returns true for ok and false for cancel.</p></li>
+          </ul>
+          <p>The exact location &amp; look is determined by the browser which is
+            a
+            limitation.</p>
+          <h3 id="window-object-bom-dom">Window object, BOM &amp; DOM</h3>
+          <p>We have the following when JavaScript runs in a browser.</p>
+          <p>Windows object represents browser window and provides method to
+            control it. It is a global objecy</p>
+          <h4 id="document-object-model-dom">Document Object Model (DOM)</h4>
+          <p>DOM represents the page contex as HTML</p>
+          <pre><code>      document.body → Page body as Js object
+    document.body.style.background = &quot;green&quot; → changes page background to green</code></pre>
+          <h4 id="browser-object-model-bom">Browser Object Model (BOM)</h4>
+          <p>The Browser Object Model (BOM) represents additional objects
+            provided
+            by the browser (host environment) for working with everything except
+            the
+            document.</p>
+          <p>The functions alerts/confirm/prompt are also a part of the BOM</p>
+          <pre><code>   location.hrey = &quot;https://google.com&quot; → Redirect to another URL</code></pre>
+        </div>
+        <div id="section7">
+          <h2 id="chapter-7---walking-the-dom">Chapter : 7 - Walking The DOM</h2>
+          <p>DOm tree refers to the HTML page where all the nodes are objects.
+            There can be 3 main types of nodes in the DOM tree:
+            <ol>
+              <li> text nodes </li>
+              <li>elements nodes </li>
+              <li>comment nodes</li>
+            </ol>
+           </p>
+          In an HTML page,
+          <html>
+            <p>is at the root and &lt; head&gt; and &lt; body&gt; are its
+              children,
+              etc.</p>
+            <p>A text node is always a leaf of the tree.</p>
+            <p> <h3>Auto Correction </h3>
+              If an arroneous HTML is encountered by the
+              browser, it tends to coorect it for examle, if we put something
+              after
+              the body, it is automatically moved inside the body. Another
+              example is
+              &lt; table&gt; tag which must contain &lt; tbody&gt;</p>
+            <p><h3>Walking the DOM</h3> </p>
+            <pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt; hello &lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            <h3 id="children-of-an-element">Children of an element</h3>
+            <p>Direct as well as deeply nested elements of an elements are
+              called
+              its children.</p>
+            <p>Child nodes → Elements that are directed children for example
+              head
+              &amp; body are children of &lt; html&gt;</p>
+            <p>Descendant nodes → All nested elements, children, their children
+              and
+              so on …</p>
+            <h3 id="firstchild-last-children">firstChild, last &amp; children</h3>
+            <ul>
+              <li>elements.firstChild → first child element</li>
+              <li>element.lastChild → last child element</li>
+              <li>element.childNodes → All child nodes</li>
+            </ul>
+            <p>Following is always true:
+              <code>elem.childNodes[0] === elem.firstChild
+                elem.chidNodes[elem.childNodes.length -1] === elem.lastChild</code>
+              There is also a method elem.hasChildNodes() to check whether
+              there are
+              any child nodes.</p>
+           <div class="note"><h3> Notes on DOM collections </h3>
+               
+              <ul>
+                <li>They are read-only </li>
+                <li>They are line
+              elem.childNodes variable(refernce) will automotically update if
+              childNpdes of elem is changed.</li>
+                <li> They are iterable using for… of loop</li>
+              </ul>
+              </div>
+              
+            <h3 id="sibling-and-the-parent">Sibling and the parent</h3>
+            <p>Sibling are nodes that are children of the same parent.</p>
+            <ul>
+              <li>For example : &lt; head&gt; and &lt; body&gt; are siblimgs.
+                Siblimgs
+                have same parent. In the above example its html.</li>
+              <li>&lt; body&gt; is asid to be “next” or “right” sibling of
+                &lt;
+                head&gt; is said to be the “previous” or “left” sibling of
+                &lt;
+                body&gt;</li>
+              <li>The next sibling is in the nextSibling property, and the
+                previous
+                one in previous. The parent is available as parentNode.</li>
+            </ul>
+            <pre><code>   alert(document.documentElement.paraNodes);//document
+   alert(document.documentElement.parentElement);//null</code></pre>
+            <h3 id="element-only-navigation">Element only Navigation</h3>
+            <p>Sometimes, we dont want text or comment nodes. Some links only
+              take
+              Element nodes into account for example.</p>
+            <pre><code>document.previousElementSibling → Previous sibling which is an Element
+
+document.nextElementsibling → next sibling (Element)
+
+document.FirstElementChild → first element child
+
+document.lastElemntChild → last element child</code></pre>
+            <h3 id="table-links">Table links</h3>
+            <p>Certain DOM elements may provide additional properties specific
+              to
+              their type for convenience. Table element supports the following
+              properties :</p>
+            <p>table.rows → collection of tv elements</p>
+            <p>table.Caption → reference to &lt; caption&gt;</p>
+            <p>table.thead → reference to &lt; thead&gt;</p>
+            <p>table.tfoot → referena to &lt; tfoot&gt;</p>
+            <p>table.tbody → Collection of &lt; tbody&gt; elements</p>
+            <p>table.row → Collection of &lt; tr&gt; inside</p>
+            <p>tr.cells → Collection of td and th</p>
+            <p>tr.SectionRowIndex → Index of tr inside enclosing element</p>
+            <p>tr.rowIndex → Row number starting from 0</p>
+            <p>td.cellIndex → no of cells inside enclosing &lt; tr&gt;</p>
+            <h3 id="searching-the-dom">Searching the DOM</h3>
+            <p>DOM navigation properties are helpful when the elements are each
+              other. If they close to each are not close to each other, we
+              have some
+              more methods to search the DOM.</p>
+            <h4 id="document-get-element-by-ld">document get Element By ld</h4>
+            <p>This method is used to get the element with a given “id”
+              attribute</p>
+            <pre><code>let span = clocument get Element By ld (&#39;span&#39;) 
+span.style Color = &quot;red&quot;&quot;</code></pre>
+            <h4 id="document.queryselectorall">document.querySelectorAll</h4>
+            <p>Returns all elements inside an element matching the given CSS
+              selector 
+            <h4>document.querySelector</h4> 
+              <p>Returns the first element
+              for the given CSS Selector.. A efficient version of elem query Selector All
+              (css) [0]</p> 
+               <h4>document.getElementsByTagName</h4> 
+               <p> Returns elements with the given tag name </p>
+              
+               <h4> document.getElmentsByClassName Returns</h4>
+               <p>elements that have the given CSS class.</p>
+              
+               <h4>document.getElementsByName</h4> 
+              Searches
+              elements by the name attribute.</p>
+            <h3 id="matches-closest-contains-methods">matches, closest &amp;
+              contains methods</h3>
+            <p>There are three important methods to search the DOM</p>
+            <ol type="1">
+              <li>elem.mactes(css) → To check if elements matches the given
+                CSS
+                selector</li>
+              <li>elem.closest(css) → To look for the nearest ancestor that
+                matches
+                the given CSS-Selector. The elem itself is also checked</li>
+              <li>elemA.contains9elems → returns true if elemB is inside elemA
+                (a
+                descendant of elemA) or when elemA == elemB</li>
+            </ol>
+          </div>
+          <div id="section8">
+            <h2 id="chapter-8---events-other-dom-properties">Chapter : 8 -
+              Events
+              &amp; other DOM properties</h2>
+            <h3 id="consle.dir-function">Consle.dir function</h3>
+            <p>consle.log shows the element DOM tree consle.dit shows the element as an object with its propeties.</p>
+               <h3> tagName/nodeName</h3>
+               <p> Used to read tag name of an element → only consist for Element nodes -
+              nodeName →
+              defined for any node (text, comment etc.)
+               </p>
+               
+            <h3 id="innerhtml-and-outerhtml">innerHTML and outerHTML</h3>
+            <p>The innerHTMl property allows to get the HTML inside the elements
+              as
+              a string.</p>
+            <p>The outerHTML property contains the full HTML innerHTML + the
+              element
+              itself.</p>
+            <p>innerHTML is valid only for element nodes. for other node types
+              we
+              can use nodeValue or data.</p>
+            <h3 id="text-content">text Content</h3>
+            <p>provides access to the text inside the element : only text, minus
+              all
+              tags.</p>
+            <h3 id="the-hidden-property">The hidden property</h3>
+            <p>The “hidden” attitude and the DOM property specifies whether the
+              element is visible or not.</p>
+            <pre><code>&lt;div hidden&gt; I am hidden &lt;/div&gt;
+&lt;div id=&quot;element&quot;&gt; I can be hidden &lt;/div&gt;
+&lt;script&gt;
+element.hidden = true;
+&lt;/script&gt;</code></pre>
+            <h3 id="attribute-methods">Attribute methods</h3>
+            <ol type="1">
+              <li>elem.hasAttribute(name) → method to check for existance of
+                an
+                attribute</li>
+              <li>elem.getAttribute(name) → methods used to get the value of
+                an
+                attribute</li>
+              <li>elem.setAttribute(nmae, value) → methods used to get set the
+                value
+                of an attribute</li>
+              <li>elem.removeAttribute(name) → methods to remove the attribute
+                from
+                elem.</li>
+              <li>elem.attribute → methods to get the collection of all
+                attributes</li>
+            </ol>
+            <h3 id="data-attribute">data → attribute</h3>
+            <p>We can always create custom attribute but the ones starting with
+              “data-” are resvered for programs use. There are available in a
+              property
+              named dataset.</p>
+            <p>If an element has an attribute named “data-one”, its available as
+              element dataset.one 
+              <h3>insertion methods </h3> 
+              We looked at some ways
+              to
+              insert elements in the DOM. Here is another way:</p>
+            <pre><code>let div = document.createElement(&#39;div&#39;) //create
+div.className = &quot; alert&quot;       // set class
+div.innerHTML = &quot;&lt;span&gt; hello&lt;/span&gt;&quot;
+document.body append(div)</code></pre>
+            <p>Here are some more insertion methods:
+              <ol>
+                <li> node.append(e) → append at the end of node </li>
+                <li>node.prepend(e) → insert at the bedinning of node</li>
+                <li>node.before(e) → insert before node </li>
+                <li>node.after(e) → insert after node</li>
+                <li> node.replaceWith(e) → replaces node with the given node.</li>
+              </ol>
+              </p>
+            <h3
+              id="insertadjacenthtmltextelement">insertAdjacentHTML/Text/Element</h3>
+            <p>This method is used to insert HTML. The first parameter is a code
+              word, specifying where to insert. Must be one of the following:
+              <ol>
+                <li>“beforebegin” → insert HTML immediatily before element </li>
+                <li>“afterbegin” →insert HTMLinto element at the beginning </li>
+                <li>“beforeend” → insert HTML into element at the end </li>
+                <li>“afterend” → insert HTML immediately after element The second parameter is an HTML string</li>
+              </ol>
+               </p>
+            <h3 id="class-and-classlist">Class and classlist</h3>
+            <p>If we assign something to elem.className, it replaces the whole
+              string of class</p>
+            <p>Often we want to add/remove/toggle a single class 
+              <ol>
+                <li>elem.classlist.add/remove(“class”) → Add/removes a class</li>
+                <li>elem.classlist.toggle(“class”) → Adds the clas if it doesn’texist, oterwise removes it.</li>
+                <li>elem.classlist.contain(“class”) → Checks for the given class, returns true/false</li>
+              </ol>
+         </p>
+            <h3 id="set-timeout-and-setinternal">Set Timeout and setInternal</h3>
+            <p>SetTimeot allows us to run a function once after the interval of
+              time</p>
+            <p>Syntax of set Timeot is as follows:</p>
+            <pre><code>let timeID = setTime(function,&lt;delay&gt;,&lt;arg1&gt;,&lt;arg2&gt;)
+clearTimeout is used to cancel the evcecution (in case we change our mind.) : For example:
+
+let timeID = setTimeout(() → alert(&quot;never&quot;),1000);
+
+clearTimeout (timeID)
+
+setInterval method has a similar suntax as setTimeout :
+
+let TimeID = setInterval (function, &lt; delay&gt;,&lt; arg1&gt;, &lt; ard2&gt;)</code></pre>
+            <p>All arguments have the same meanung. But unlike setTimeout, it
+              runs
+              the function not only once, but regularly after the given
+              interval of
+              time.</p>
+            <p>To stop further calls, we can use clearInterval(timeID).</p>
+            <h3 id="browser-events">Browser Events</h3>
+            <p>An event is a singal that something has happend. All the DOM
+              nodes
+              generates such signals.</p>
+            <p>Some importants DOM events are :</p>
+            <ol type="1">
+              <li>Mouse events : click, contextmenu(right click),
+                mouseover/mouseout,
+                mousedown/mousedown, movesmoves</li>
+              <li>keyboard events : keydown and keyup</li>
+              <li>form element events : subsmit, focus etc.</li>
+              <li>Document events : DOMContent Loaded</li>
+            </ol>
+            <h3 id="handling-events">Handling Events</h3>
+            <p>Events can be handled through HTML attributes</p>
+            <pre><code>&lt; input value=&quot;Hey&gt; onclick=&quot;alert(&#39;hey)&quot; type=&quot;button&quot;&gt;</code></pre>
+            <p>Events can also be handled through the onclick property</p>
+            <pre><code>elem.onclick = function{
+        alert(&quot;yes&quot;)
+        };</code></pre>
+            <h3 id="addeventlistner-and-removeeventslisterner">addEventListner
+              and
+              removeEventsListerner</h3>
+            <p>addEventListner is used to asign multiple handlers to an events.</p>
+            <pre><code>element.addEventListner(event, handler)
+element.removeEventListner(event, handler)</code></pre>
+            <h3 id="the-event-object">The Event Object</h3>
+            <p>When an event happens, the browser creates an events objects,
+              puts
+              details into it and passes it as an argument to the handler</p>
+            <pre><code>elem.onclick = function(event){
+          ...
+          }</code></pre>
+            <p>event.type : Event type event.currentTarget : Element that
+              handled
+              the event event.clientx/event.clinty : Coordinates of the cursor</p>
+          </div>
+          <div id="section9">
+            <h2 id="chapter-9-call-backs-promises-asyncawait">Chapter : 9 Call
+              backs, promises &amp; async/await</h2>
+            <p>Asynchrouns action are the actions that we initiate now and they
+              finish later. eg. setTimout Synchronoun action are the actions
+              that
+              initiate and finish one-by-one</p>
+            <h3 id="callback-functions">Callback functions</h3>
+            <p>A callback function is a function passed into another function as
+              an
+              argument, which is then involved inside the outer function to
+              complete
+              an action.</p>
+            <p>Here is an examples of a callback:</p>
+            <pre><code>function loadScript(src, callback){
+let script.src = src
+script.onload = () → callback(script)
+document.head.append(script)
+}</code></pre>
+            <p>Now we can do something like this:</p>
+            <pre><code>laod Script(&#39;https://http://thecodingchronicles.000webhostapp.com&#39;,(script) → {
+alert(&#39;Script is loaded&#39;)
+alert(script.src)
+});</code></pre>
+            <p>This is called “Callback - based” style of async programming. A
+              function that does something Asynchrounsly should provide a
+              callback
+              argument where we put the function to run after its complete.</p>
+            <h3 id="handaling-errors">Handaling errors</h3>
+            <p>We can handles callback errors by supplying error argument like
+              this:</p>
+            <pre><code>function loadScript (src, called){
+
+
+script.onload = () → callback(null.Script);
+script.onerror = () → callback(new, Error(&#39;failed&#39;));
+
+}
+//Then inside of loadScript call :</code></pre>
+<pre><code>loadScript(‘cdn/deep’,function(error, script){ 
+  … if (error){ 
+    //handle error 
+  }
+   else 
+   { 
+    // script loaded
+   } 
+  1,});</code></pre>
+            <h3> Pyramid of DOM</h3>
+            <p>When we have callback inside callbacks, the code gets difficult to manage</p>
+            <pre><code>loadScript((…)){ loadScript .. loadScript… loadScript… }</code></pre>
+            
+           As calls become more nested, the code becomes deeper and increasingly more difficult to manage, especially if we have real code insted of ...
+
+This is sometimes called &quot;Callback hell&quot; or &quot;pyramid of doom&quot;.
+
+The &quot;pyramid&quot; of these calls grows towards the right with every asynchronous action. Soon it spirals out of control. So this way of coding isn&#39;t very good!
+<H3> Introduction to Promises</H3>
+The solution to the callback hell is promises. A promises is a &quot;promise of code execution.&quot; The code either executes or fails, in both the cases the subscribes will be notified.
+
+The syntax of a Promise look like this: <pre><code>let promise = new Promise(function(resolve. reject){ 
+  // executor
+});</code></pre>
+            <p>
+               resolve and reject are two callbacks provided by javascript
+              itself.
+              They are called ilke this:</p>
+            <p>resolve(value) → If the job is finished successfully
+              reject(error) →
+              If the job fails</p>
+            <p>The promises object returned by the new promise constructor has
+              these
+              properties</p>
+            <p>1.state : Initially pending, then changes to either “fullfilled”
+              when
+              resolved is called or “rejected” when reject is called</p>
+              <h3 id="credit">credit:</h3></li>
+              <li><strong><span class="citation"
+                    data-cites="codewithharry">@codewithharry</span></strong></li>
+              <li><strong><span class="citation"
+                    data-cites="software">@software</span> chasers</strong></li>
+            </ul>
+        
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- <footer class="page-footer bg-image" style="background-image: url(../assets/img/world_pattern.svg);">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-4 py-3">
+          <h3>SEOGram</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet, repellendus eius blanditiis in iusto eligendi iure.</p>
+
+          <div class="social-media-button">
+            <a href="#"><span class="mai-logo-facebook-f"></span></a>
+            <a href="#"><span class="mai-logo-twitter"></span></a>
+            <a href="#"><span class="mai-logo-google-plus-g"></span></a>
+            <a href="#"><span class="mai-logo-instagram"></span></a>
+            <a href="#"><span class="mai-logo-youtube"></span></a>
+          </div>
+        </div>
+        <div class="col-lg-4 py-3">
+          <h5>Company</h5>
+          <ul class="footer-menu">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Help & Support</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 py-3">
+          <h5>Contact Us</h5>
+          <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+          <a href="#" class="footer-link">+00 1122 3344 5566</a>
+          <a href="#" class="footer-link">seogram@temporary.com</a>
+        </div>
+      </div>
+
+      <p class="text-center" id="copyright">Copyright &copy; 2020. This template design and develop by <a href="https://macodeid.com/" target="_blank">MACode ID</a></p>
+    </div>
+  </footer> -->
+    <footer class="page-footer bg-image" style="background-image:
+      url(../../assets/img/world_pattern.svg);">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 py-3">
+            <h3 class="footertext">CODING <br> CHRONICLES</h3>
+            <p>We are here on these platforms for right now!!!</p>
+
+            <div class="social-media-button">
+              <!-- <a href="#"><span class="mai-logo-facebook-f"></span></a> -->
+              <!-- <a href="#"><span class="mai-logo-twitter"></span></a> -->
+              <!-- <a href="#"><span class="mai-logo-google-plus-g"></span></a> -->
+              <a href="https://www.instagram.com/softwarechasers5/"><span
+                  class="mai-logo-instagram"></span></a>
+              <!-- <a href="#"><span class="mai-logo-youtube"></span></a> -->
+            </div>
+          </div>
+          <div class="col-lg-6 py-3">
+            <h5 id="contact">Contact Us</h5>
+            <!-- <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+          <a href="#" class="footer-link">+00 1122 3344 5566</a> -->
+            <!-- <a href="#" class="footer-link"></a> -->
+            <p>thecodingchronicles4@gmail.com</p>
+          </div>
+          <!-- <div class="col-lg-4 py-3">
+          <h5>Newsletter</h5>
+          <p>Get updates, news or events on your mail.</p>
+          <form action="#">
+            <input type="text" class="form-control" placeholder="Enter your email..">
+            <button type="submit" class="btn btn-success btn-block mt-2">Subscribe</button>
+          </form>
+        </div> -->
+        </div>
+
+        <p class="text-center" id="copyright">Copyright &copy; 2023. This
+          Website is developed by software chasers<a href="" target="_blank"></a></p>
+      </div>
+    </footer>
+
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../../assets/js/google-maps.js"></script>
+
+    <script src="../../assets/vendor/wow/wow.min.js"></script>
+
+    <script src="../../assets/js/theme.js"></script>
+
+    <script src="../../assets/js/HTML & CSS.js"></script>
+
+
+
+  </body>
+
+</html>

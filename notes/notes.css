@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  :root {
+    --primary: #6C55F9;
+    --accent: #FF3D85;
+    --secondary: #645F88;
+    --success: #35bb78;
+    --info: #05B4E1;
+    --warning: #FAC14D;
+    --danger: #FF4943;
+    --grey: #B4B2C5;
+    --dark: #2D2B3A;
+    --light: #F6F5FC;
+  }
+  body{
+    background-color:#ffffff ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h1,h2{
+    border-bottom: 2px solid black;
+    text-align: center;  
+  }
+  .exception{
+     border-bottom: 0px;
+    text-align: left;
+  }
+  pre{
+    padding: 5px;
+    border:3px solid  #0d0063;
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: #fff;
+    font-size: large;
+  }
+  .div{
+    padding: 5px;
+    border:3px solid  #0d0063;
+    background-color: #007BFF;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .note{
+    background-color: #fddc9b;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid;
+  }
+  img{
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+  }
+  .css{
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+  @media only screen and (max-width: 600px) {
+      .img-css{
+        width: 100%;
+  }
+  } 
